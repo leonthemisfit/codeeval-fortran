@@ -1,3 +1,5 @@
+! https://www.codeeval.com/open_challenges/16/
+
 program number_of_ones
   implicit none
 

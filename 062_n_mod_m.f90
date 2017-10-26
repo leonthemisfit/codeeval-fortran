@@ -1,3 +1,5 @@
+! https://www.codeeval.com/open_challenges/62/
+
 program n_mod_m
   character(256) :: line
   integer(4) :: x, y

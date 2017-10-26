@@ -1,3 +1,5 @@
+! https://www.codeeval.com/open_challenges/21/
+
 program sum_of_digits
   character(20) :: output
 

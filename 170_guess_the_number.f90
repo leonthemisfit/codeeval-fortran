@@ -1,3 +1,5 @@
+! https://www.codeeval.com/open_challenges/170/
+
 program guess_the_number
   character(256) :: line
 
