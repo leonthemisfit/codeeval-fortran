@@ -1,4 +1,4 @@
-program guessthenumber
+program guess_the_number
   character(256) :: line
 
   call openfile()
@@ -72,4 +72,4 @@ contains
       end select
     end do
   end subroutine game
-end program guessthenumber
+end program guess_the_number
