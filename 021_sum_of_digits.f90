@@ -1,4 +1,4 @@
-program sumofdigits
+program sum_of_digits
   character(20) :: output
 
   call openfile()
@@ -46,4 +46,4 @@ contains
       if (io == 0) sum = sum + n
     end do
   end function sumstring
-end program sumofdigits
+end program sum_of_digits
