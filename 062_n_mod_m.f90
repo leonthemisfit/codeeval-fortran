@@ -1,4 +1,4 @@
-program nmodm
+program n_mod_m
   character(256) :: line
   integer(4) :: x, y
 
@@ -54,4 +54,4 @@ contains
       rest = ""
     end if
   end subroutine popint
-end program nmodm
+end program n_mod_m
