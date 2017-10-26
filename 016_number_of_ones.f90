@@ -1,4 +1,4 @@
-program countones
+program number_of_ones
   implicit none
 
   character(20) :: output
@@ -66,4 +66,4 @@ contains
       res = r // trim(res)
     end do
   end function count
-end program countones
+end program number_of_ones
