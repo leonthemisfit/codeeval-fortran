@@ -8,7 +8,7 @@ program stack_implementation
     integer(4) :: length = 0
   end type stack
 
-  character(256) :: line
+  character(512) :: line
   type(stack) :: s
 
   call openfile()
@@ -52,13 +52,13 @@ contains
   end subroutine delete
 
   subroutine openfile()
-    character(256) :: path
+    character(512) :: path
     call getarg(1, path)
     open(9, file=trim(path))
   end subroutine openfile
 
   function readline() result(line)
-    character(256) :: line
+    character(512) :: line
     integer(1) :: io
 
     read(9, "(a)", iostat=io) line
@@ -71,7 +71,7 @@ contains
 
   subroutine popint(first, rest)
     integer(8), intent(out) :: first
-    character(256), intent(inout) :: rest
+    character(512), intent(inout) :: rest
     integer(2) :: index
 
     index = scan(trim(rest), " ")
@@ -85,7 +85,7 @@ contains
   end subroutine popint
 
   subroutine parseline(line, s)
-    character(256), intent(inout) :: line
+    character(512), intent(inout) :: line
     type(stack), intent(inout) :: s
     integer(8) :: temp
 
@@ -100,7 +100,7 @@ contains
     type(stack), intent(inout) :: s
     integer(8) :: temp
     character(64) :: tempstring
-    character(256) :: line
+    character(512) :: line
 
     line = ""
     do
