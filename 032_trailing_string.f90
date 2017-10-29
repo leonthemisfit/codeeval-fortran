@@ -9,7 +9,6 @@ program trailing_string
   integer(4), parameter :: FILE_UNIT = 99
   character(*), parameter :: FMT_INT = "(i0)"
   character(*), parameter :: FMT_STR = "(a)"
-  ! character(*), parameter :: FMT_RINT = "(i4)"
   character, parameter :: EOF = char(0)
   character, parameter :: DELIM = ","
 
