@@ -13,7 +13,7 @@ program cash_register
   character, parameter :: EOF = char(0)
   character, parameter :: DELIM = ";"
 
-  character(11) :: NAMES(12) = (/ &
+  character(11), parameter :: NAMES(12) = (/ &
     "ONE HUNDRED", &
     "FIFTY      ", &
     "TWENTY     ", &
@@ -28,7 +28,7 @@ program cash_register
     "PENNY      "  &
   /)
 
-  real(REAL_LENGTH) :: VALUES(12) = (/ &
+  real(REAL_LENGTH), parameter :: VALUES(12) = (/ &
     100.00, &
      50.00, &
      20.00, &
