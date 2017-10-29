@@ -13,7 +13,7 @@ program fizz_buzz
     case ("EOF")
       exit
     case ("")
-      continue
+      cycle
     case default
       call popint(f, line)
       call popint(b, line)

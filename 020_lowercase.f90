@@ -12,7 +12,7 @@ program lowercase
     case (char(0))
       exit
     case ("")
-      continue
+      cycle
     case default
       call tolower(line)
       print "(a)", trim(line)

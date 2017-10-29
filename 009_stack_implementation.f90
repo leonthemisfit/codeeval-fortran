@@ -18,7 +18,7 @@ program stack_implementation
     case (char(0))
       exit
     case ("")
-      continue
+      cycle
     case default
       call parseline(line, s)
       call printstack(s)

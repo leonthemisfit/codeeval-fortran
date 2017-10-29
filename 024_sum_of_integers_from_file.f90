@@ -12,7 +12,7 @@ program sum_of_integers_from_file
     case (char(0))
       exit
     case ("")
-      continue
+      cycle
     case default
       read(line, "(i4)") n
       sum = sum + n

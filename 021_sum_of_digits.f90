@@ -10,7 +10,7 @@ program sum_of_digits
     case ("EOF")
       exit
     case ("")
-      continue
+      cycle
     case default
       print "(i0)", sumstring(trim(output))
     end select

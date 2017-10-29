@@ -12,7 +12,7 @@ program mth_to_last_element
     case (char(0))
       exit
     case ("")
-      continue
+      cycle
     case default
       call parseline(line)
     end select

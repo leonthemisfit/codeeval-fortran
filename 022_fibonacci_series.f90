@@ -11,7 +11,7 @@ program fibonacci_series
       case (char(0))
         exit
       case ("")
-        continue
+        cycle
       case default
         read(line, "(i4)") n
         print "(i0)", fib(n)

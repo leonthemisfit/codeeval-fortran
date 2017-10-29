@@ -14,7 +14,7 @@ program number_of_ones
     case ("EOF")
       exit
     case ("")
-      continue
+      cycle
     case default
       read(output, "(i8)", iostat=io) n
       if (io == 0) print "(i0)", count(n)

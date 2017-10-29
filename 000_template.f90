@@ -22,7 +22,7 @@ program NAME
     case (EOF)
       exit
     case ("")
-      continue
+      cycle
     case default
       ! DO STUFF
     end select

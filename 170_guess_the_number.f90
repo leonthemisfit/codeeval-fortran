@@ -10,7 +10,7 @@ program guess_the_number
     case ("EOF")
       exit
     case ("")
-      continue
+      cycle
     case default
       call game(line)
     end select

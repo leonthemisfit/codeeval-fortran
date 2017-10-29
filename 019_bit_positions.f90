@@ -12,7 +12,7 @@ program bit_positions
     case (char(0))
       exit
     case ("")
-      continue
+      cycle
     case default
       call handleline(line)
     end select

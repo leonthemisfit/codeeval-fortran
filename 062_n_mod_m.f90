@@ -11,7 +11,7 @@ program n_mod_m
     case ("EOF")
       exit
     case ("")
-      continue
+      cycle
     case default
       call popint(x, line)
       call popint(y, line)
