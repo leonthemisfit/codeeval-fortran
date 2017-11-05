@@ -77,4 +77,21 @@ contains
   !     rest = ""
   !   end if
   ! end subroutine popstring
+  !
+  ! subroutine popchar(char, rest)
+  !   character, intent(out) :: char
+  !   character(STRING_LENGTH), intent(inout) :: rest
+  !
+  !   select case (len_trim(rest))
+  !   case (0)
+  !     char = ""
+  !     rest = ""
+  !   case (1)
+  !     char = rest
+  !     rest = ""
+  !   case default
+  !     char = rest(1:1)
+  !     rest = rest(2:)
+  !   end select
+  ! end subroutine popchar
 end program NAME
